@@ -35,13 +35,13 @@
                     <form action="#">
                         <div class="input-bg">
                             <i class="fa-solid fa-user fa-fade" style="color: #f0ffff;"></i>
-                            <input id="Username" type="text" placeholder="Username">
+                            <input id="Username_en" type="text" placeholder="Username">
                         </div>
                         <div class="input-bg">
                             <i class="fa-solid fa-lock fa-fade" style="color: #f0ffff;"></i>
-                            <input id="Password" type="password" placeholder="Password" autocomplete="off">
+                            <input id="Password_en" type="password" placeholder="Password" autocomplete="off">
                         </div>
-                        <button id="login-button">Login</button>
+                        <button id="login-button_en">Login</button>
                         <div class="forgot">
                             <a href="https://bys.marmara.edu.tr/UniFrame/lostpassword/default2.aspx?lang=tr-TR" target="_blank"><i class="fa-solid fa-arrow-right"></i>
                                 Forgot My Password</a>
@@ -178,35 +178,9 @@
             <a class="text-white" href="https://mdbootstrap.com/">Marmara University Information Technology Department</a>
         </div>
     </footer> <!-- Footer End -->
-    <script src="app.js"></script>
+  
+    <script src="en.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script>
-        let enLogo = document.getElementById("EnMain");
-        enLogo.addEventListener("mouseenter", () => {
-        enLogo.src = "img/enHoverMain.png";
-        });
-        enLogo.addEventListener("mouseleave", () => {
-        enLogo.src = "img/en/main.png";
-        });
-
-        // mobiles
-        let android_en = document.getElementById("android_en")
-        android_en.addEventListener("mouseenter", () => {
-            android_en.src = "img/andHover.png"
-        })
-        android_en.addEventListener("mouseleave", () => {
-            android_en.src = "img/android.png"
-        })
-
-        let ios_en = document.getElementById("ios_en")
-        ios_en.addEventListener("mouseenter", () => {
-            ios_en.src = "img/iosHov.png"
-        })
-        ios_en.addEventListener("mouseleave", () => {
-            ios_en.src = "img/ios.png"
-        })
-
-
-    </script>
+    
 </body>
 </html>

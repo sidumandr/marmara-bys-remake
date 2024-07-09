@@ -151,6 +151,28 @@ body {
   transition: 400ms all;
 }
 
+#login-button_en {
+  /* height: 27px; */
+  padding: 4px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: 300ms all;
+  /* margin: 0 0 0 35px; */
+  background-color: #6d96cf;
+  border: 1px solid #2d3d54;
+  font-size: large;
+  position: relative;
+  left: 25%;
+  margin-top: 10px;
+}
+
+#login-button_en:hover {
+  background-color: #4d6b95;
+  border: 1px solid #6d96cf;
+  transition: 400ms all;
+}
+
 .forgot {
   position: relative;
 

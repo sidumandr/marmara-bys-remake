@@ -111,3 +111,26 @@ ios.addEventListener("mouseenter", () => {
 ios.addEventListener("mouseleave", () => {
   ios.src = "img/ios.png";
 });
+
+// sisteme giris
+let login = document.getElementById("login-button");
+let username = document.getElementById("Username");
+let password = document.getElementById("Password");
+let url = "https://www.example.com";
+
+login.onclick = function (event) {
+  event.preventDefault();
+
+  let usernameValue = username.value;
+  let passwordValue = password.value;
+
+  if (usernameValue === "" && passwordValue === "") {
+    alert("Lütfen Kullanıcı Adınızı ve Şifrenizi Girdiğinizden Emin Olun!");
+  } else if (usernameValue === "") {
+    alert("Lütfen Kullanıcı Adınızı Girdiğinizden Emin Olun!");
+  } else if (passwordValue === "") {
+    alert("Lütfen Şifrenizi Girdiğinizden Emin Olun!");
+  } else {
+    window.location.href = url;
+  }
+};
