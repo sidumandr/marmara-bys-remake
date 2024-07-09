@@ -1,0 +1,348 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"); */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poetsen+One&display=swap"); */
+
+/* * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: beige;
+  background-image: url(img/marmara1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav-bar {
+  font-family: "Noto Serif", serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.nav-bar-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar-left h2 {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: azure;
+}
+
+.nav-bar-left img {
+  width: 90px;
+  height: auto;
+}
+
+.nav-bar .buttons a {
+  margin: 8px;
+  color: azure;
+  text-decoration: none;
+  /* border: 1px solid #2d3d54; */
+  background-color: #2d3d54;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.nav-bar .buttons a:hover {
+  background-color: #4d6b95;
+  border: none;
+}
+
+#supBtn {
+  margin: 5px;
+  margin-right: 8px;
+  color: azure;
+  text-decoration: none;
+  /* border: 1px solid #2d3d54; */
+  background-color: #2d3d54;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+#supBtn:hover {
+  background-color: #4d6b95;
+  border: none;
+}
+
+.login-panel {
+  width: 351px;
+  height: 480px;
+  margin: 100px auto 0 auto;
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px;
+
+  /* background: url(../Content/site/images/login-bg-role.png) no-repeat top center; */
+  /* transition-property: height;
+  transition-duration: 0.8s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1); */
+}
+
+.login-panel img {
+  height: 200px;
+  margin-bottom: 35px;
+}
+
+.input-bg {
+  position: relative;
+  right: 10px;
+}
+
+.input-bg input {
+  margin-bottom: 14px;
+  border-radius: 20px;
+  width: 200px;
+  height: 40px;
+}
+
+.input-bg input:focus {
+  outline: none;
+  /* border: none; */
+}
+
+.input-bg input::placeholder {
+  color: #2d3d54;
+  font-size: small;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  text-overflow: ellipsis;
+}
+
+:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.login-panel #login-button {
+  /* height: 27px; */
+  padding: 4px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: 300ms all;
+  /* margin: 0 0 0 35px; */
+  background-color: #6d96cf;
+  border: 1px solid #2d3d54;
+  font-size: large;
+  position: relative;
+  left: 25%;
+  margin-top: 10px;
+}
+
+.login-panel #login-button:hover {
+  background-color: #4d6b95;
+  border: 1px solid #6d96cf;
+  transition: 400ms all;
+}
+
+.forgot {
+  position: relative;
+
+  margin-top: 20px;
+}
+
+.forgot a {
+  color: #ececec;
+  margin-top: 5px;
+  display: block;
+  text-align: start;
+  text-shadow: 0 1px 1px #333;
+  text-decoration: none;
+  font-size: small;
+  background: url(../Content/serenity/images/accordion-right.png) no-repeat left
+    6px;
+}
+
+.mobile-links {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 12px;
+}
+
+.mobile-links img {
+  width: 40px;
+  height: 37px;
+  margin-left: 10px;
+}
+
+/* #supportFormMain {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin-left: 380px;
+  margin-top: 100px;
+  color: #ececec;
+}
+
+#supportFormMain input,
+label {
+  border: none;
+  border-radius: 10px;
+  border-style: inherit;
+  margin-bottom: 10px;
+}
+
+#supportFormMain input,
+label:focus {
+  outline: none;
+} */
+
+#supSub {
+  margin-top: 30px;
+  color: azure;
+  text-decoration: none;
+  border: none;
+  background-color: #4d6b95;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+#supSub:hover {
+  background-color: #6d96cf;
+  border: 1px solid #4d6b95;
+}
+
+#overlay {
+  display: none; /* Başlangıçta görünmeyecek */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Yarı saydam arka plan */
+  z-index: 999; /* Formun arkasında ama diğer içeriklerin önünde */
+}
+
+#supHead {
+  display: flex;
+  justify-content: space-between;
+}
+
+#supClose {
+  width: 30px;
+  border: none;
+  background-color: transparent;
+  font-size: x-large;
+  position: relative;
+  bottom: 2.5px;
+}
+
+#supCont {
+  display: none; /* Başlangıçta form gizli olacak */
+  position: fixed; /* Ekranda sabit konum */
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Ortalamak için */
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Diğer içeriklerin üstünde görünmesi için yüksek z-index */
+  border-radius: 8px;
+  width: 80%;
+  max-width: 500px;
+}
+
+#supportFormMain {
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+
+#supportFormMain input,
+label {
+  border-radius: 5px;
+  margin-bottom: 2px;
+  border-color: #6d96cf;
+}
+
+#supportFormMain input,
+label:focus {
+  outline: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#supportFormMain select {
+  border-radius: 5px;
+  margin-bottom: 2px;
+  border-color: #6d96cf;
+}
+
+section {
+  color: #ececec;
+}
+
+section h6 {
+  color: wheat;
+}
+
+section a {
+  text-decoration: none;
+  color: #ececec;
+}
+
+.social-icons {
+  padding-top: 32px;
+}
+
+.social-icons i {
+  font-size: 24px;
+}
+
+.social-icons i:hover {
+  color: #2d3d54;
+}
+
+.phones {
+  display: flex;
+  flex-direction: column;
+}
+.phones a {
+  text-decoration: none;
+  color: #ececec;
+}
+
+.phones i {
+  margin-right: 10px;
+}
+
+.copy {
+  color: wheat;
+}
+.copy a {
+  text-decoration: none;
+}
+
+.kvkk {
+  display: flex;
+  flex-direction: column;
+}
+
+.kvkk a {
+  margin-bottom: 16px;
+}

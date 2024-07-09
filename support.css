@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: beige;
+  background-image: url(img/marmara1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#supportForm {
+  margin-top: 20px;
+  margin-left: 30%;
+  width: 100%;
+}
+
+#supportFormMain {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+#supportFormMain input,
+label {
+  border: none;
+  border-radius: 10px;
+  border-style: inherit;
+}
+
+#supportFormMain input,
+label:focus {
+  outline: none;
+}
