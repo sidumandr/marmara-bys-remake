@@ -110,6 +110,7 @@ body {
   border-radius: 20px;
   width: 200px;
   height: 40px;
+  padding-left: 15px;
 }
 
 .input-bg input:focus {
@@ -120,7 +121,6 @@ body {
 .input-bg input::placeholder {
   color: #2d3d54;
   font-size: small;
-  padding-left: 10px;
   padding-bottom: 5px;
   text-overflow: ellipsis;
 }
